@@ -3,6 +3,11 @@ syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
+set title                       " Show the title of the file currently being edited
+
+"" Temporary files
+set backupdir=~/.tmp,/var/tmp,/tmp
+set directory=~/.tmp,/var/tmp,/tmp
 
 "" Whitespace
 set nowrap                      " don't wrap lines
