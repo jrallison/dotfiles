@@ -1,9 +1,9 @@
 Installation
 ------------
 
-  git clone git://github.com/jrallison/dotfiles ~/.dotfiles
-  cd ~/.dotfiles
-  rake install
+    git clone git://github.com/jrallison/dotfiles ~/.dotfiles
+    cd ~/.dotfiles
+    rake install
 
 Environment
 -----------
@@ -13,4 +13,4 @@ minor fiddling. I primarily use zsh, but this includes some older bash
 files as well. If you would like to switch to zsh, you can do so with 
 the following command.
 
-  chsh -s /bin/zsh
+    chsh -s /bin/zsh
