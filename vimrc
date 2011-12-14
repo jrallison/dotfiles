@@ -4,6 +4,9 @@ set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 set title                       " Show the title of the file currently being edited
+set hidden                      " Allows vim to handle multiple buffers more efficiently
+let mapleader = " "             " change modifier key to space
+let g:loaded_netrwPlugin = 1    " disable netrw plugin
 
 "" Temporary files
 set backupdir=~/.tmp,/var/tmp,/tmp
