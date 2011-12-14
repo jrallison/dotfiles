@@ -1,12 +1,11 @@
 set nocompatible                " choose no compatibility with legacy vi
-syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
-filetype plugin indent on       " load file type plugins + indentation
 set title                       " Show the title of the file currently being edited
 set hidden                      " Allows vim to handle multiple buffers more efficiently
+filetype plugin indent on       " load file type plugins + indentation
+syntax enable
 let mapleader = " "             " change modifier key to space
-let g:loaded_netrwPlugin = 1    " disable netrw plugin
 
 "" Temporary files
 set backupdir=~/.tmp,/var/tmp,/tmp
@@ -26,6 +25,11 @@ set smartcase                   " ... unless they contain at least one capital l
 
 "" Plugins
 call pathogen#infect()          " load pathogen
+call pathogen#helptags()        " load pathogen helptags
+let g:loaded_netrwPlugin = 1    " disable netrw plugin
+
+"" Theme
+color vilight                   " set vilight as the color theme
 
 "" Local config
 if filereadable(".vimrc.local")
