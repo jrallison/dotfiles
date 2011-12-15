@@ -34,6 +34,7 @@ color vilight                   " set vilight as the color theme
 "" GUI
 set guioptions-=T               " Toggle off toolbar
 set guifont=Monaco:h13
+set transparency=5
 
 "" Local config
 if filereadable(".vimrc.local")
