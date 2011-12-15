@@ -1,8 +1,8 @@
 set nocompatible                " choose no compatibility with legacy vi
 set encoding=utf-8
 set showcmd                     " display incomplete commands
-set title                       " Show the title of the file currently being edited
 set hidden                      " Allows vim to handle multiple buffers more efficiently
+set laststatus=2                " Show status line
 filetype plugin indent on       " load file type plugins + indentation
 syntax enable
 let mapleader = " "             " change modifier key to space
@@ -30,6 +30,10 @@ let g:loaded_netrwPlugin = 1    " disable netrw plugin
 
 "" Theme
 color vilight                   " set vilight as the color theme
+
+"" GUI
+set guioptions-=T               " Toggle off toolbar
+set guifont=Monaco:h13
 
 "" Local config
 if filereadable(".vimrc.local")
