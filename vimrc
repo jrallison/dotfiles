@@ -2,6 +2,7 @@ set nocompatible                " choose no compatibility with legacy vi
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 set hidden                      " Allows vim to handle multiple buffers more efficiently
+set number                      " Shows line number
 set laststatus=2                " Show status line
 filetype plugin indent on       " load file type plugins + indentation
 syntax enable
