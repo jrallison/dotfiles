@@ -36,6 +36,9 @@ set guioptions-=T               " Toggle off toolbar
 set guifont=Monaco:h13
 set transparency=5
 
+"" Listing
+set wildignore+=tmp/**,vendor/**,public/**
+
 "" Local config
 if filereadable(".vimrc.local")
   source .vimrc.local
