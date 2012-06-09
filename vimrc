@@ -8,6 +8,10 @@ filetype plugin indent on       " load file type plugins + indentation
 syntax enable
 let mapleader = " "             " change modifier key to space
 
+"" CtrlP mappings
+nnoremap <silent> <Leader>t :CtrlP<cr>
+nnoremap <silent> <leader>T :ClearCtrlPCache<cr>\|:CtrlP<cr>
+
 "" Temporary files
 set backupdir=~/.tmp,/var/tmp,/tmp
 set directory=~/.tmp,/var/tmp,/tmp
@@ -38,7 +42,7 @@ set guifont=Monaco:h13
 set transparency=5
 
 "" Listing
-set wildignore+=tmp/**,vendor/**,public/**
+set wildignore+=tmp/**,public/**
 
 "" Local config
 if filereadable(".vimrc.local")
