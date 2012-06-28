@@ -31,14 +31,15 @@ set smartcase                   " ... unless they contain at least one capital l
 "" Plugins
 call pathogen#infect()          " load pathogen
 call pathogen#helptags()        " load pathogen helptags
-let g:loaded_netrwPlugin = 1    " disable netrw plugin
+let g:loaded_netrwPlugin=1      " disable netrw plugin
+let g:Powerline_symbols='fancy' " disable netrw plugin
 
 "" Theme
 color vilight                   " set vilight as the color theme
 
 "" GUI
 set guioptions-=T               " Toggle off toolbar
-set guifont=Monaco:h13
+set guifont=Anonymous\ Pro\ for\ Powerline:h14
 set transparency=5
 
 "" Listing
