@@ -39,7 +39,7 @@ color vilight                   " set vilight as the color theme
 
 "" GUI
 set guioptions-=T               " Toggle off toolbar
-set guifont=Anonymous\ Pro\ for\ Powerline:h14
+set guifont=Anonymous\ Pro\ for\ Powerline:h16
 set transparency=5
 
 "" Listing
