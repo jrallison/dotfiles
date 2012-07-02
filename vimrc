@@ -3,10 +3,13 @@ set encoding=utf-8
 set showcmd                     " display incomplete commands
 set hidden                      " Allows vim to handle multiple buffers more efficiently
 set number                      " Shows line number
+set autoread                    " reload file when changed from the outside
 set laststatus=2                " Show status line
+set so=7                        " Add a 7 line buffer when navigated with j/k
 filetype plugin indent on       " load file type plugins + indentation
 syntax enable
 let mapleader = " "             " change modifier key to space
+
 
 "" CtrlP mappings
 nnoremap <silent> <Leader>t :CtrlP<cr>
@@ -15,6 +18,15 @@ nnoremap <silent> <leader>T :ClearCtrlPCache<cr>\|:CtrlP<cr>
 "" Temporary files
 set backupdir=~/.tmp,/var/tmp,/tmp
 set directory=~/.tmp,/var/tmp,/tmp
+
+"" File settings
+nmap <leader>w :w!<cr>          " faster saves
+
+"" Window movements
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 "" Whitespace
 set nowrap                      " don't wrap lines
