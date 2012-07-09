@@ -3,6 +3,8 @@ Installation
 
     git clone git://github.com/jrallison/dotfiles ~/.dotfiles
     cd ~/.dotfiles
+    git submodule init
+    git submodule update
     rake install
 
 Environment
