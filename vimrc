@@ -46,6 +46,9 @@ call pathogen#helptags()        " load pathogen helptags
 let g:loaded_netrwPlugin=1      " disable netrw plugin
 let g:Powerline_symbols='fancy' " disable netrw plugin
 
+" Use git to populate files for ctrlp
+let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
+
 "" Theme
 color vilight                   " set vilight as the color theme
 
