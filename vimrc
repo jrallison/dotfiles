@@ -50,7 +50,7 @@ let g:Powerline_symbols='fancy' " disable netrw plugin
 let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
 
 "" Theme
-color vilight                   " set vilight as the color theme
+color base16                    " set vilight as the color theme
 
 "" GUI
 set guioptions-=T               " Toggle off toolbar
