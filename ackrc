@@ -1,2 +1,3 @@
 --type-add=css=.scss
 --type-add=js=.handlebars
+--type-add=coffee=.coffee

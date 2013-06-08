@@ -11,6 +11,8 @@ filetype plugin indent on       " load file type plugins + indentation
 syntax enable
 let mapleader = " "             " change modifier key to space
 
+" Use current directory to list files in CtrlP
+let g:ctrlp_working_path_mode = 'c'
 
 "" CtrlP mappings
 nnoremap <silent> <Leader>t :CtrlP<cr>
@@ -43,9 +45,6 @@ call pathogen#helptags()        " load pathogen helptags
 let g:loaded_netrwPlugin=1      " disable netrw plugin
 let g:Powerline_symbols='fancy' " disable netrw plugin
 
-" Use git to populate files for ctrlp
-let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
-
 "" Theme
 color base16                    " set vilight as the color theme
 
@@ -55,7 +54,7 @@ set guifont=Anonymous\ Pro\ for\ Powerline:h16
 set transparency=5
 
 "" Listing
-set wildignore+=tmp/**,public/**
+set wildignore+=*tmp/*,*/public/*
 
 "" Local config
 if filereadable(".vimrc.local")
