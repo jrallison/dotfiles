@@ -1,3 +1,15 @@
+--smart-case
+--follow
+--sort-files
+--color
+--noheading
+--break
+--pager=less
+
+--type-set=coffee=.coffee
 --type-add=css=.scss
 --type-add=js=.handlebars
---type-add=coffee=.coffee
+
+--ignore-dir=vendor
+--ignore-dir=tmp
+--ignore-dir=public
