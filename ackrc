@@ -13,3 +13,4 @@
 --ignore-dir=vendor
 --ignore-dir=tmp
 --ignore-dir=public
+--ignore-dir=node_modules
