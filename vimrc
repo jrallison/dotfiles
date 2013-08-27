@@ -7,11 +7,19 @@ set autoread                    " reload file when changed from the outside
 set laststatus=2                " Show status line
 set so=7                        " Add a 7 line buffer when navigated with j/k
 set noswapfile                  " Don't add swap files
-filetype plugin indent on       " load file type plugins + indentation
-syntax enable
 let mapleader = " "             " change modifier key to space
 
-" Use current directory to list files in CtrlP
+"" load file type plugins + indentation with go runtime path
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
+
+"" format go code automatically on save
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+"" Use current directory to list files in CtrlP
 let g:ctrlp_working_path_mode = 'c'
 
 "" CtrlP mappings
@@ -46,7 +54,9 @@ let g:loaded_netrwPlugin=1      " disable netrw plugin
 let g:Powerline_symbols='fancy' " disable netrw plugin
 
 "" Theme
-color base16                    " set vilight as the color theme
+color base16                    " set base16 as the color theme
+"set background=light
+"colorscheme solarized
 
 "" GUI
 set guioptions-=T               " Toggle off toolbar
@@ -54,7 +64,7 @@ set guifont=Anonymous\ Pro\ for\ Powerline:h16
 set transparency=5
 
 "" Listing
-set wildignore+=*tmp/*,*/public/*,*/vendor/*
+set wildignore+=*tmp/*,*/public/*,*/vendor/*,*/node_modules/*
 
 "" Local config
 if filereadable(".vimrc.local")
