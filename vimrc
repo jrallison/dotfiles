@@ -56,7 +56,6 @@ let g:Powerline_symbols='fancy' " disable netrw plugin
 "" Theme
 color base16                    " set base16 as the color theme
 "set background=light
-"colorscheme solarized
 
 "" GUI
 set guioptions-=T               " Toggle off toolbar

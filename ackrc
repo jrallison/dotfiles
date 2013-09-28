@@ -8,7 +8,7 @@
 
 --type-set=coffee=.coffee
 --type-add=css=.scss
---type-add=js=.handlebars
+--type-add=js=.handlebars,.hbs
 
 --ignore-dir=vendor
 --ignore-dir=tmp
