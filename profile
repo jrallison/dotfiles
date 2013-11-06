@@ -31,6 +31,7 @@ function proml {
   local       GREEN="\[\033[0;32m\]"
   local LIGHT_GREEN="\[\033[1;32m\]"
   local       WHITE="\[\033[1;37m\]"
+  local        GRAY="\[\033[1;30m\]"
   local  LIGHT_GRAY="\[\033[0;37m\]"
   local     DEFAULT="\[\033[0;39m\]"
   case $TERM in
@@ -43,9 +44,9 @@ function proml {
   esac
 
 PS1="${TITLEBAR}\
-$BLUE[$RED\$(date +%H:%M)$BLUE]\
-$BLUE[$RED\W$GREEN\$(parse_git_branch)$BLUE]\
-$GREEN\$$DEFAULT "
+$GRAY\$(date +%H:%M:%S) \
+$LIGHT_GRAY\w$GREEN\$(parse_git_branch) \
+$GRAY\$$DEFAULT "
 PS2='> '
 PS4='+ '
 }
