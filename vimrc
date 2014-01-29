@@ -9,6 +9,10 @@ set so=7                        " Add a 7 line buffer when navigated with j/k
 set noswapfile                  " Don't add swap files
 let mapleader = " "             " change modifier key to space
 
+"" tell vim to stop yelling at me.
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
 "" load file type plugins + indentation with go runtime path
 filetype off
 filetype plugin indent off
