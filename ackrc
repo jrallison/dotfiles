@@ -11,6 +11,7 @@
 --type-add=js=.handlebars,.hbs
 
 --ignore-dir=vendor
+--ignore-dir=.npm
 --ignore-dir=tmp
 --ignore-dir=public
 --ignore-dir=node_modules

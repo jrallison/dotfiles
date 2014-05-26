@@ -67,7 +67,7 @@ set guifont=Anonymous\ Pro\ for\ Powerline:h16
 set transparency=5
 
 "" Listing
-set wildignore+=*tmp/*,*/public/*,*/vendor/*,*/node_modules/*
+set wildignore+=*tmp/*,*/public/*,*/vendor/*,*/node_modules/*,*/.npm/*
 
 "" Local config
 if filereadable(".vimrc.local")
