@@ -14,4 +14,7 @@
 --ignore-dir=.npm
 --ignore-dir=tmp
 --ignore-dir=public
+--ignore-dir=bundle
+--ignore-dir=log
+--ignore-dir=logs
 --ignore-dir=node_modules
