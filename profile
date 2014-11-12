@@ -52,8 +52,5 @@ PS4='+ '
 }
 proml
 
-export GOROOT=/usr/local/go
-export GOPATH=~/go
-export PATH="$GOROOT/bin:~/go/bin:$PATH"
-
-source ~/.profile.local
+[[ -s "/Users/jrallison/.gvm/scripts/gvm" ]] && source "/Users/jrallison/.gvm/scripts/gvm"
+[[ -s "/Users/jrallison/.profile.local" ]] && source ~/.profile.local
