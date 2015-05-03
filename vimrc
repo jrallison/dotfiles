@@ -20,8 +20,13 @@ set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
 
-"" format go code automatically on save
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
+"" vim-go options (https://github.com/fatih/vim-go)
+let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+
+autocmd BufWritePost,FileWritePost *.go execute 'GoLint' | cwindow
 
 "" Use current directory to list files in CtrlP
 let g:ctrlp_working_path_mode = 'c'
@@ -63,7 +68,7 @@ set background=dark
 
 "" GUI
 set guioptions-=T               " Toggle off toolbar
-set guifont=Anonymous\ Pro\ for\ Powerline:h16
+set guifont=Menlo\ Regular:h13
 set transparency=5
 
 "" Listing
