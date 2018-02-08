@@ -69,7 +69,6 @@ set background=dark
 "" GUI
 set guioptions-=T               " Toggle off toolbar
 set guifont=Menlo\ Regular:h13
-set transparency=5
 
 "" Listing
 set wildignore+=*tmp/*,*/public/*,*/vendor/*,*/node_modules/*,*/.npm/*
