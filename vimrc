@@ -60,15 +60,8 @@ set smartcase                   " ... unless they contain at least one capital l
 call pathogen#infect()          " load pathogen
 call pathogen#helptags()        " load pathogen helptags
 let g:loaded_netrwPlugin=1      " disable netrw plugin
-let g:Powerline_symbols='fancy' " disable netrw plugin
 
 "" Theme
-color base16                    " set base16 as the color theme
-set background=dark
-
-"" GUI
-set guioptions-=T               " Toggle off toolbar
-set guifont=Menlo\ Regular:h13
 
 "" Listing
 set wildignore+=*tmp/*,*/public/*,*/vendor/*,*/node_modules/*,*/.npm/*
