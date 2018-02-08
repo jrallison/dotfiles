@@ -18,7 +18,9 @@ filetype off
 filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
-syntax on
+syntax enable
+set background=dark
+colorscheme solarized
 
 "" vim-go options (https://github.com/fatih/vim-go)
 let g:go_fmt_command = "goimports"
