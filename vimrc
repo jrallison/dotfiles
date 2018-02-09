@@ -68,7 +68,7 @@ let g:loaded_netrwPlugin=1      " disable netrw plugin
 "" Theme
 
 "" Listing
-set wildignore+=*tmp/*,*/public/*,*/vendor/*,*/node_modules/*,*/.npm/*
+set wildignore+=*tmp/*,*/public/*,*/node_modules/*,*/.npm/*
 
 "" Local config
 if filereadable(".vimrc.local")
